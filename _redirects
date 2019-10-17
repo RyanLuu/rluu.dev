@@ -4,4 +4,4 @@
 https://rluu.netlify.com/* https://www.rluu.dev/:splat 301!
 
 #404 handling
-/* /* 404
+/* /:splat 404
