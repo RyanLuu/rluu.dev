@@ -1,0 +1,8 @@
+{
+  "name": "rluu.dev",
+  "main": "deploy.js",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  }
+}
