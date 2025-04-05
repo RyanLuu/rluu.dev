@@ -1,5 +1,5 @@
 {
-  "name": "rluu.dev",
+  "name": "rluu-dev",
   "main": "deploy.js",
   "assets": {
     "directory": "./public",
