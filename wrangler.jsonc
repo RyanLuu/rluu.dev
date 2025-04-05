@@ -1,6 +1,7 @@
 {
   "name": "rluu-dev",
   "main": "deploy.js",
+  "compatibility_date": "2025-04-05",
   "assets": {
     "directory": "./public",
     "binding": "ASSETS"
