@@ -420,7 +420,12 @@ void make_output_dir(char *path) {
 void copy_files(char *fromdir, char *todir) {
   DIR *dirp = opendir(fromdir);
   if (dirp == NULL) {
-    PANIC_ERRNO("Failed to open directory: %s", fromdir);
+    if (ENOENT == errno) {
+      printf("Skipping directory %s: does not exist\n", fromdir);
+      return;
+    } else {
+      PANIC_ERRNO("Failed to open directory: %s", fromdir);
+    }
   }
   struct dirent *ep;
   while ((ep = readdir(dirp)) != NULL) {
