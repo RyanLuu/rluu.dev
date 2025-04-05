@@ -1,0 +1,11 @@
+site_name = "rluu.dev"
+site_url = "https://rluu.dev"
+site_desc = "Ryan Luu's website"
+
+pages = [ "index", "blog" ]
+
+[post.hello-world]
+title = "Hello, rluu.dev!"
+tags = [ "c" ]
+date = 2025-04-02
+desc = "The static site generator behind rluu.dev"
